@@ -17,6 +17,7 @@ class Dropdown {
   toggleContent() {
     // Toggle the ".dropdown-hidden" class off and on
     this.content.classList.toggle('dropdown-hidden') ;
+    TweenLite.from(this.content, 0.5, {y:-150})
   }
 }
 

@@ -1,4 +1,3 @@
-
 class TabLink {
   constructor(element) {
     // Assign this.element to the passed in DOM element
@@ -47,8 +46,21 @@ class TabItem {
     Array.from(items).forEach(item => item.classList.remove('tabs-item-selected'))
     // Add a class named "tabs-item-selected" to this element
     this.element.classList.add('tabs-item-selected');
+    console.log(this.currentTabItem)
   }
 }
+
+
+// class Tabs {
+//   constructor(element) {
+//     this.element = element;
+//     this.currentTabLink = this.element
+//     this.currentTabItem = this.tabItem
+//   console.log(this.currentTabLink)
+  
+//   }
+// }
+
 
 /* START HERE: 
 
@@ -63,3 +75,4 @@ class TabItem {
 links = document.querySelectorAll('.tabs-link');
 // console.log(links)
 links.forEach(link => new TabLink(link))
+// links.forEach(link => new Tabs(link))
