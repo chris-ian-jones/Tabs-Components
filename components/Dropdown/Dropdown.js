@@ -17,6 +17,8 @@ class Dropdown {
   toggleContent() {
     // Toggle the ".dropdown-hidden" class off and on
     this.content.classList.toggle('dropdown-hidden') ;
+    
+    // Stretch added animation to dropdown menu, move position
     TweenLite.from(this.content, 0.5, {y:-150})
   }
 }
