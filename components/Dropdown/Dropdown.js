@@ -18,8 +18,10 @@ class Dropdown {
     // Toggle the ".dropdown-hidden" class off and on
     this.content.classList.toggle('dropdown-hidden') ;
     
-    // Stretch added animation to dropdown menu, move position
+    // Stretch added animation to dropdown menu, move menu position down from 150px above
     TweenLite.from(this.content, 0.5, {y:-150})
+    // added animation to dropdown menu, easeIn the opacity from 0 to 1
+    TweenLite.from(this.content, 0.5, {ease: Power4.easeIn, opacity: 0})
   }
 }
 
